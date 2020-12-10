@@ -6,3 +6,6 @@
   $ git merge feature/名_性
   ```
 - 複数人が同時に同じファイルを編集すると、衝突（conflict）が発生する。
+
+- 設定変更
+vim .git/config
