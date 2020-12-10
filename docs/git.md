@@ -83,13 +83,7 @@ Gitを使用して、応用実験で使用するプログラムをダウンロ�
   《実例》
   $ git commit -m "Change test.txt"
   ```
-- pushする。恐らくSSHの設定が済んでいないとpushできない。→来週
+- pushする。恐らくSSHの設定が済んでいないとpushできない。→来週、設定しましょう。
   ```
   $ git push origin feature/名_性
   ```
-- 上位のブランチに移動し、編集内容を取り込む。
-  ```
-  $ git checkout develop
-  $ git merge feature/名_性
-  ```
-- 複数人が同時に同じファイルを編集すると、衝突（conflict）が発生する。
