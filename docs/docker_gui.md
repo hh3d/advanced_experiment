@@ -64,14 +64,14 @@
 
 ## Windows
 ### 準備
-- Xmingをインストールする。
-  - http://www.straightrunning.com/XmingNotes/
-- Xmingを起動し、設定を変更する。
-  - Public Domain ReleasesのXming 6.9.0.31を選択する。
-- コンテナーのIPアドレスを確認する。
+- 事前にコンテナーのIPアドレスを確認しておく。
   ```
   $ hostname -i
   ```
+- WindowsにXmingをインストールする。
+  - http://www.straightrunning.com/XmingNotes/
+  - Public Domain Releases（無料版）のXming 6.9.0.31を選択する。
+- Xmingを起動し、設定を変更する。
 - Xmingのインストール先（/Program Files/Xming）のX0.hostsファイルで、X Windowの転送を許可するサーバ（X Windowを転送するサーバ）のIPアドレスを記入する。
 - PCを再起動する。
 
