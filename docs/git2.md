@@ -2,11 +2,12 @@
 
 
 ## SSHの設定
-- 下記のディレクトリーにid_rsaとid_rsa.pubが存在することを確認する。なお、拡張子「.pub」は公開鍵を表す。
+- どのディレクトリーで行っても大丈夫です。
+- 下記のディレクトリーにid_rsaとid_rsa.pubが存在することを確認します。
   ```
   $ ls ~/.ssh
   ```
-  - 存在しない場合は作成する。パスフレーズは無しで大丈夫です。
+  - 存在しない場合は作成します。パスフレーズは無しで大丈夫です。
     ```
     $ ssh-keygen -t rsa
     ```
@@ -22,12 +23,17 @@
   - xselコマンドが無い場合はパッケージをインストールする。
     ```
     $ sudo apt update
-    $ sudo apt-get install xsel
+    $ sudo apt -y install xsel
     ```
-- GitHubのウェブサイトを開き、［Settings］→［SSH and GPG keys］→［SSH keys］へ進み、ボタン「New SSH key」にペーストする。
+- GitHubのウェブサイトを開き、［Settings］→［SSH and GPG keys］→［SSH keys］へ進み、ボタン「New SSH key」を押す。
+- 公開鍵の内容をペーストし、登録する。
 
 
 ## Push
+- advanced_experimentディレクトリーで行う。
+  ```
+  $ cd ~/catkin_ws/src/advanced_experiment
+  ```
 - 上位のブランチに移動し、編集内容を取り込む。
   ```
   $ git checkout develop
