@@ -71,8 +71,9 @@
 - WindowsにXmingをインストールする。
   - http://www.straightrunning.com/XmingNotes/
   - Public Domain Releases（無料版）のXming 6.9.0.31を選択する。
-- Xmingを起動し、設定を変更する。
-- Xmingのインストール先（/Program Files/Xming）のX0.hostsファイルで、X Windowの転送を許可するサーバ（X Windowを転送するサーバ）のIPアドレスを記入する。
+- Xmingの設定を変更し、起動する。
+  - Xmingのインストール先（/Program Files/Xming）のX0.hostsファイルで、X Windowの転送を許可するサーバ（X Windowを転送するサーバ）のIPアドレスを記入する。
+  - Display numberは0とする。
 - PCを再起動する。
 
 ## 実行
