@@ -11,9 +11,9 @@
     $ ssh-keygen -t rsa
     ```
     - ssh-keygenコマンドが無い場合はパッケージをインストールする。
-    ```
-    $ sudo apt install openssh-server
-    ```
+      ```
+      $ sudo apt install openssh-server
+      ```
 - Macの場合は下記のコマンドで公開鍵の内容をクリップボードにコピーする。
   ```
   pbcopy < ~/.ssh/id_rsa.pub
