@@ -6,19 +6,25 @@
   ```
   $ ls ~/.ssh
   ```
-  - 存在しない場合は作成する。
+  - 存在しない場合は作成する。パスフレーズは無しで大丈夫です。
     ```
     $ ssh-keygen -t rsa
     ```
     - ssh-keygenコマンドが無い場合はパッケージをインストールする。
       ```
-      $ sudo apt install openssh-server
+      $ sudo apt update
+      $ sudo apt -y install openssh-server
       ```
-- Macの場合は下記のコマンドで公開鍵の内容をクリップボードにコピーする。
+- 下記のコマンドで公開鍵の内容をクリップボードにコピーする。
   ```
-  pbcopy < ~/.ssh/id_rsa.pub
+  $ cat ~/.ssh/id_rsa.pub | xsel --clipboard --input
   ```
-- GitHubのウェブサイトを開き、SSH keysへペーストし、登録する。
+  - xselコマンドが無い場合はパッケージをインストールする。
+    ```
+    $ sudo apt update
+    $ sudo apt-get install xsel
+    ```
+- GitHubのウェブサイトを開き、［Settings］→［SSH and GPG keys］→［SSH keys］へ進み、ボタン「New SSH key」にペーストする。
 
 
 ## Push
