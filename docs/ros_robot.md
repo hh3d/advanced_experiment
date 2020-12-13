@@ -17,14 +17,19 @@
   ros-melodic-move-base ros-melodic-urdf ros-melodic-xacro \
   ros-melodic-compressed-image-transport ros-melodic-rqt-image-view \
   ros-melodic-gmapping ros-melodic-navigation ros-melodic-interactive-markers
+  ```
 - TurtleBot3用のパッケージをインストールする。
+  ```
   $ source /opt/ros/melodic/setup.bash
   $ sudo apt -y install ros-melodic-turtlebot3-msgs
   $ sudo apt -y install ros-melodic-turtlebot3
+  ```
 - 環境変数を設定する。
+  ```
   $ echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
   $ echo "export ROS_MASTER_URI=http://172.17.0.2:11311" >> ~/.bashrc（※コンテナーのIPアドレス）
   $ echo "export ROS_HOSTNAME=172.17.0.2" >> ~/.bashrc（※コンテナーのIPアドレス）
+  ```
 
 ## 実行
 ### ターミナル1
