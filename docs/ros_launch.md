@@ -1,33 +1,38 @@
 # roslaunchの利用
-## ROSパッケージの利用方法
-- 毎回、複数のターミナルを開くのは面倒なので、ここからはROSコマンド「roslaunch」を使用します。
-- roslaunchコマンドでlaunchファイルを実行すると、複数のROSノードを1つのターミナルで起動することができます。
-- サンプルプログラムをGitHub上に公開しているので、~/catkin_ws/srcにcloneし、使用してみてください。
-  - 既にclone済みの場合はpullしてください。
+## 基本
+毎回、複数のターミナルを開くのは面倒なので、ここからはROSコマンド「roslaunch」を使用します。roslaunchコマンドでlaunchファイルを実行すると、複数のROSノードを1つのターミナルで起動することができます。また、ROSマスターが起動していなかった場合は、起動してくれます。
+
+サンプルプログラムをGitHub上に公開しているので、~/catkin_ws/srcにcloneし、使用してみてください。既にclone済みの場合はpullしてください。
 ```
 $ cd ~/catkin_ws/src
 $ git clone https://github.com/stl-apu/advanced_experiment.git
 ```  
-サンプルプログラムをビルドする。  
+サンプルプログラムをビルドします。
 ```
 $ cd ~/catkin_ws
 $ catkin_make
 $ source devel/setup.bash
 ```
-
-下記のとおり実行する。launchディレクトリー内のedge_detection.launchを確認すると、4つのROSノードが起動することが分かる。  
+下記のとおり実行します。launchディレクトリー内のturtle_test.launchを確認すると、2つのROSノードが起動することが分かります。
 ```
-turtle_test.launch
-roslaunch stl_ros_sample edge_detection.launch
-```  
-ROSパッケージ「opencv_apps」は画像処理用ライブラリーであるOpenCVをROSで気軽に使用できるようにしたもので、この例では同パッケージ内のROSノード「edge_detection（エッジ検出）」を利用している。
+$ roslaunch advanced_experiment turtle_test.launch
+```
 
-2つのウィンドウが表示され、顔の輪郭などに白線が出ていればOKです。
+## 応用基礎
+※Dockerの人はこのセクションを実行できません。
 
-研究では白線に基づいて顔を検出したり認識したりする。
+画像処理の例を下記のとおり実行します。launchディレクトリー内のedge_detection.launchを確認すると、4つのROSノードが起動することが分かります。
+```
+$ roslaunch advanced_experiment edge_detection.launch
+```
 
-## ROSパッケージの結合方法
-画像処理の結果を利用して、亀を動かす。
+ROSパッケージ「opencv_apps」は画像処理用ライブラリーであるOpenCVをROSで気軽に使用できるようにしたもので、この例では同パッケージ内のROSノード「edge_detection（エッジ検出）」を利用しています。2つのウィンドウが表示され、顔の輪郭などに白線が出ていればOKです。
+
+
+
+
+## 応用
+画像処理の結果を利用して、亀を動かすことができます。
 
 camera_infoの情報を利用することになるので、カメラのキャリブレーションを行う。→Camera Calibration
 
