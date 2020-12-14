@@ -34,6 +34,17 @@
   ```
   $ cd ~/catkin_ws/src/advanced_experiment
   ```
+- Pushする。
+  ```
+  $ git push origin feature/名_性
+  ```
+    - remoteの設定変更も必要？エラー「remote: Permission to ...」が発生？
+    ```
+    《記法》
+    $ git remote set-url origin https://ユーザー名@github.com/ユーザー名/リポジトリー名.git
+    《実例》
+    $ git remote set-url origin https://stl-apu@github.com/stl-apu/advanced_experiment.git
+    ```
 - 上位のブランチに移動し、編集内容を取り込む。
   ```
   $ git checkout develop
@@ -41,15 +52,10 @@
   ```
 - Pushする。
   ```
-  $ git push origin feature/名_性
+  $ git push origin develop
   ```
-  - remoteの設定変更も必要？エラー「remote: Permission to ...」が発生？
-    ```
-    《記法》
-    $ git remote set-url origin https://ユーザー名@github.com/ユーザー名/リポジトリー名.git
-    《実例》
-    $ git remote set-url origin https://stl-apu@github.com/stl-apu/advanced_experiment.git
-    ```
+
+
 - 複数人が同時に同じファイルを編集すると、衝突（conflict）が発生する。
 - ブランチを「master」に戻しておく。
   ```
