@@ -54,9 +54,8 @@
   ```
   $ git push origin develop
   ```
-
-
 - 複数人が同時に同じファイルを編集すると、衝突（conflict）が発生する。
+  - 本来はconflictを解消し、pushすべきだが、応用実験ではconflictが発生するところまでとする。
 - ブランチを「master」に戻しておく。
   ```
   $ git checkout master
