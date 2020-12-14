@@ -41,7 +41,7 @@
   ```
 - Pushする。
   ```
-  $ git push origin feature/名_性
+  $ git push origin develop
   ```
   - remoteの設定変更も必要？エラー「remote: Permission to ...」が発生？
     ```
