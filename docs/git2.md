@@ -38,7 +38,7 @@
   ```
   $ git push origin feature/名_性
   ```
-    - remoteの設定変更も必要？エラー「remote: Permission to ...」が発生？
+  - remoteの設定変更も必要？エラー「remote: Permission to ...」が発生？
     ```
     《記法》
     $ git remote set-url origin https://ユーザー名@github.com/ユーザー名/リポジトリー名.git
