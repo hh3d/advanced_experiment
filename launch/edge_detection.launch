@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="usb_cam" type="usb_cam_node" name="usb_cam_node" output="screen"/>
+  <node pkg="image_view" type="image_view" name="image_view_input" output="screen">
+    <remap from="/image" to="/usb_cam_node/image_raw"/>
+  </node>
+  <node pkg="opencv_apps" type="edge_detection" name="edge_detection" output="screen">
+    <remap from="/image" to="/usb_cam_node/image_raw"/>
+  </node>
+  <node pkg="image_view" type="image_view" name="image_view_output" output="screen">
+    <remap from="/image" to="/edge_detection/image"/>
+  </node>
+</launch>

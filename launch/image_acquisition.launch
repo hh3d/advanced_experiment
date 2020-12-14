@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="cv_camera" type="cv_camera_node" name="cv_camera_node" output="screen"/>
+  <node pkg="stl_ros_sample" type="image_acquisition" name="image_acquisition" output="screen"/>
+</launch>

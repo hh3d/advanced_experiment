@@ -13,8 +13,9 @@
   - [https://github.com/](https://github.com/)
 
 ## PCの設定
-- Ubuntu、Mac、Windowsのいずれかを使用できるようにしておいてください。
+- Ubuntu、Mac、Windows（Enterprise、Pro、またはEducationエディション）のいずれかを使用できるようにしておいてください。
   - 教員やTAがサポートしやすいのは、Ubuntu＞Mac＞Windowsの順番です。
+  - Windows 10 Homeエディションの人はHyper-Vを使用できないので、Educationなどにアップグレードしておいてください。
 - OSを最新版にアップデートしておいてください。
   - ウイルス対策ソフトなどが最新版に対応していない場合は、それらが対応している最新版にアップデートしておいてください。
 
