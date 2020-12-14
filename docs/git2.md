@@ -44,7 +44,10 @@
   $ git push origin feature/名_性
   ```
 - 複数人が同時に同じファイルを編集すると、衝突（conflict）が発生する。
-
+- ブランチを「master」に戻しておく。
+  ```
+  $ git checkout master
+  ```
 
 ## 設定変更
 - Gitの設定を変更したいときはconfigを開く。
@@ -52,8 +55,3 @@
   $ cd ~/catkin_ws/src/advanced_experiment
   $ vim .git/config
   ```
-- ブランチを「master」に戻しておく。
-  ```
-  $ git checkout master
-  ```
-  
