@@ -52,4 +52,8 @@
   $ cd ~/catkin_ws/src/advanced_experiment
   $ vim .git/config
   ```
-
+- ブランチを「master」に戻しておく。
+  ```
+  $ git checkout master
+  ```
+  
