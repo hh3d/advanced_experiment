@@ -46,11 +46,3 @@
   ↓正常にビルドできていれば、下記の場所に移動する。
   ~/catkin_ws/devel
   ```
-
-## パッケージの追加
-- ROSパッケージを追加する。
-  ```
-  $ sudo apt install ros-melodic-usb-cam
-  $ sudo apt install ros-melodic-cv-camera
-  $ sudo apt install ros-melodic-opencv-apps
-  ```
