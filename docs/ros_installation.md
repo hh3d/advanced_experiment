@@ -33,16 +33,3 @@
   ROSLISP_PACKAGE_DIRECTORIES=
   ROS_DISTRO=melodic
   ```
-
-## ビルド
-- catkin_makeコマンドを用いてビルドする。
-  ```
-  $ mkdir -p ~/catkin_ws/src
-  $ cd ~/catkin_ws
-  $ catkin_make
-  $ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
-  $ source ~/.bashrc
-  $ roscd
-  ↓正常にビルドできていれば、下記の場所に移動する。
-  ~/catkin_ws/devel
-  ```
