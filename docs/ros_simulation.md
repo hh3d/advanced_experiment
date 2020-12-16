@@ -1,4 +1,5 @@
 # シミュレーション
+- GUIに対応したコンテナーに入った状態で実行してください。
 - rootユーザーで行ってください。
 
 ## 準備
@@ -9,17 +10,13 @@
 - シミュレーション実験用のROSパッケージをインストールする。
   ```
   $ sudo apt update
-  $ sudo apt -y install ros-$(rosversion -d)-turtlesim
+  $ sudo apt -y install ros-melodic-turtlesim
   ```
 
 ## 実行
 - turtlesimをキーボードで動かす。  
 - 全部で3つのターミナルを用いる。ターミナルを3つ用意しても良いですし、1つのターミナルに3つのタブを作成しても良いです。
 - 全てのターミナルに共通して、下記を実行する。
-  - コンテナーに入る。
-  ```
-  $ docker exec -it ros bash
-  ```
   - コンテナーに入ったあと、環境変数などを設定する。
   ```
   $ source ros_entrypoint.sh
