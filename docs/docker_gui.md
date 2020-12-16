@@ -46,12 +46,16 @@
   - https://www.xquartz.org/
 - XQuartzを起動し、［環境設定］→［セキュリティ］から「ネットワーク・クライアントからの接続を許可」にチェックを入れる。
 - コンピューターを再起動する。
-- XQuartzを起動する。
+- 再度、XQuartzを起動する。
 
 ### 実行
 - イメージをダウンロードする。
   ```
   $ docker pull ros:melodic-robot-bionic
+  ```
+- イメージの存在を確認する。
+  ```
+  $ docker images
   ```
 - コンテナーを作成する。
   ```
