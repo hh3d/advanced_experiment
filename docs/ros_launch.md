@@ -22,12 +22,6 @@ $ roslaunch advanced_experiment turtle_test.launch
 
 ※Dockerの人はこのセクションを実行できません。
 
-- 画像処理に必要なROSパッケージをインストールします。
-  ```
-  $ sudo apt install ros-melodic-usb-cam
-  $ sudo apt install ros-melodic-cv-camera
-  $ sudo apt install ros-melodic-opencv-apps
-  ```
 - 画像処理を実行します。launchディレクトリー内のedge_detection.launchを確認すると、4つのROSノードが起動することが分かります。
 ```
 $ roslaunch advanced_experiment edge_detection.launch
