@@ -19,19 +19,27 @@ $ roslaunch advanced_experiment turtle_test.launch
 ```
 
 ## 応用基礎
+
 ※Dockerの人はこのセクションを実行できません。
 
-画像処理の例を下記のとおり実行します。launchディレクトリー内のedge_detection.launchを確認すると、4つのROSノードが起動することが分かります。
+- 画像処理に必要なROSパッケージをインストールします。
+  ```
+  $ sudo apt install ros-melodic-usb-cam
+  $ sudo apt install ros-melodic-cv-camera
+  $ sudo apt install ros-melodic-opencv-apps
+  ```
+- 画像処理を実行します。launchディレクトリー内のedge_detection.launchを確認すると、4つのROSノードが起動することが分かります。
 ```
 $ roslaunch advanced_experiment edge_detection.launch
 ```
-
-ROSパッケージ「opencv_apps」は画像処理用ライブラリーであるOpenCVをROSで気軽に使用できるようにしたもので、この例では同パッケージ内のROSノード「edge_detection（エッジ検出）」を利用しています。2つのウィンドウが表示され、顔の輪郭などに白線が出ていればOKです。
-
-
+- ROSパッケージ「opencv_apps」は画像処理用ライブラリーであるOpenCVをROSで気軽に使用できるようにしたもので、この例では同パッケージ内のROSノード「edge_detection（エッジ検出）」を利用しています。
+- 2つのウィンドウが表示され、顔の輪郭などに白線が出ていればOKです。
 
 
 ## 応用
+
+※Dockerの人はこのセクションを実行できません。
+
 画像処理の結果を利用して、亀を動かすことができます。
 
 camera_infoの情報を利用することになるので、カメラのキャリブレーションを行う。→Camera Calibration
