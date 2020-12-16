@@ -33,3 +33,11 @@
   ROSLISP_PACKAGE_DIRECTORIES=
   ROS_DISTRO=melodic
   ```
+
+## ROSパッケージの追加
+- 必要なROSパッケージをインストールします。
+  ```
+  $ sudo apt install ros-melodic-usb-cam
+  $ sudo apt install ros-melodic-cv-camera
+  $ sudo apt install ros-melodic-opencv-apps
+  ```
