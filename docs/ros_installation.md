@@ -37,7 +37,7 @@
 ## ROSパッケージの追加
 - 必要なROSパッケージをインストールします。
   ```
-  $ sudo apt install ros-melodic-usb-cam
-  $ sudo apt install ros-melodic-cv-camera
-  $ sudo apt install ros-melodic-opencv-apps
+  $ sudo apt -y install ros-melodic-usb-cam
+  $ sudo apt -y install ros-melodic-cv-camera
+  $ sudo apt -y install ros-melodic-opencv-apps
   ```
