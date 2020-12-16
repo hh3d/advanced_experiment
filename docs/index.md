@@ -10,7 +10,8 @@
 - [Docker](https://stl-apu.github.io/advanced_experiment/docker)
 - [ROS Installation](https://stl-apu.github.io/advanced_experiment/ros_installation)
 - [ROS Build](https://stl-apu.github.io/advanced_experiment/ros_build)
-- [ROS Topic](https://stl-apu.github.io/advanced_experiment/basics)
+- [ROS Command](https://stl-apu.github.io/advanced_experiment/ros_command)
+- [ROS Topic](https://stl-apu.github.io/advanced_experiment/ros_topic)
 
 ## Week 2
 - [Git](https://stl-apu.github.io/advanced_experiment/git)
