@@ -61,6 +61,12 @@
   ```
   $ docker run -it -e DISPLAY=$(hostname):0 -v ~/.Xauthority:/root/.Xauthority --name ros ros:melodic-robot-bionic
   ```
+
+### 再実行
+- コンテナーを起動する。
+  ```
+  $ docker start ros
+  ```
 - コンテナーに入る。
   ```
   $ docker exec -it ros bash
